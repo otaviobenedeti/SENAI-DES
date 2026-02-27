@@ -13,20 +13,17 @@ datasource db {
 }
 
 model Carros {
-  id        Int    @id @default(autoincrement())
-  placa     String@unique      
-  marca     String
-  modelo    String
-  ano       Int
-
+  id     Int    @id @default(autoincrement())
+  placa  String @unique
+  marca  String
+  modelo String
+  ano    Int
 }
 
 model Clentes {
-  id        Int    @id @default(autoincrement())
-  nome      String
-  CPF       Int@unique
-  email     String@unique
-  CNH       Int@unique
-
-  
+  id    Int    @id @default(autoincrement())
+  nome  String
+  CPF   Int    @unique
+  email String @unique
+  CNH   Int    @unique
 }
